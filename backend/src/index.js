@@ -1,11 +1,12 @@
 require('dotenv').config();
+require('./database');
 
 const app = require('./app');
 
 async function main() {
 
-    await app.listen(process.env.PORT || 3500);
-    console.log('servidor en puerto', process.env.PORT);
+    await app.listen(app.get('port'));
+    console.log('server on port', app.get('port'));
 }
 
 main();

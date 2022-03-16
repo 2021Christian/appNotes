@@ -1,0 +1,16 @@
+### Traigo todas las Notas
+GET http://localhost:3000/api/notes/
+
+### Creo una Nota
+POST http://localhost:3000/api/notes/
+
+
+### Traigo una Nota
+GET http://localhost:3000/api/notes/:1
+
+### Modifico una Nota
+PUT http://localhost:3000/api/notes/:1
+
+### Elimino Nota
+DELETE http://localhost:3000/api/notes/:1
+
