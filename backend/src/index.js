@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 const app = require('./app');
 
 async function main() {
 
-    await app.listen(4000);
-    console.log('servidor en puerto 4000');
+    await app.listen(process.env.PORT || 3500);
+    console.log('servidor en puerto', process.env.PORT);
 }
 
 main();
