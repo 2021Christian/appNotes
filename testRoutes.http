@@ -3,14 +3,44 @@ GET http://localhost:3000/api/notes/
 
 ### Creo una Nota
 POST http://localhost:3000/api/notes/
+Content-Type: application/json
 
+{
+    "title" : "sadsd",
+    "content" : "asfddsfsdfsdf",
+    "author" : "safddsfdsfdsfdsffds"
+}
 
 ### Traigo una Nota
-GET http://localhost:3000/api/notes/:1
+GET http://localhost:3000/api/notes/623271f86966e007f9c09d50
 
 ### Modifico una Nota
-PUT http://localhost:3000/api/notes/:1
+PUT http://localhost:3000/api/notes/623272296966e007f9c09d54
+Content-Type: application/json
+
+{
+    "title" : "nota actualizada",
+    "content" : "modifico los campos",
+    "author" : "yo yo yo "
+}
 
 ### Elimino Nota
-DELETE http://localhost:3000/api/notes/:1
+DELETE http://localhost:3000/api/notes/62326c9d8ab79bd8be470093
 
+#####################################################################
+
+### Traigo todas los Usuarios
+GET http://localhost:3000/api/users/
+
+
+### Creo un Usuario
+POST http://localhost:3000/api/users/
+Content-Type: application/json
+
+{
+    "username" : "uno mas"
+}
+
+
+### Elimino Usuario
+DELETE http://localhost:3000/api/users/6232a594a262299367d669c0
